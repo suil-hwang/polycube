@@ -5,10 +5,10 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="polycube",
-    version="0.0.1",
+    version="0.1.0",  
     author="Donald R. Sheehy",
     author_email="don.r.sheehy@gmail.com",
-    description="A package for constructing polycube models",
+    description="A package for constructing polycube models with mesh I/O support",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/donsheehy/polycube",
@@ -18,6 +18,12 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.6',
-    install_requires=['solidpython'],
+    python_requires='>=3.7',  
+    install_requires=[
+        'solidpython',
+        'trimesh>=3.9.0',
+        'pyvista>=0.32.0',
+        'numpy>=1.19.0',
+        'scipy>=1.5.0',  
+    ],
 )
