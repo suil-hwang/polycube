@@ -15,7 +15,7 @@ Python package for converting 3D meshes to polycube models with VTK/VTU export s
 ## Installation
 
 ```bash
-git clone https://github.com/donsheehy/polycube.git
+git clone https://github.com/suil-hwang/polycube.git
 cd polycube
 pip install -e .
 ```
